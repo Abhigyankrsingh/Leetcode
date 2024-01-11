@@ -12,7 +12,7 @@ class Solution {
         break;
       while (num >= value) {
         num -= value;
-        ans += symbol;
+        ans += syml;
       }
     }
 
