@@ -1,19 +1,22 @@
 #include<bits/stdc++.h>
 
 using namespace std;
+
 int main(){
 
     int n;
+
     cin >> n;
-     
-    int  arr[n];
+
+    int arr[n];
+
     for(int i =0; i<n;i++){
         cin >> arr[i];
     }
 
-    map<int, int>mpp;
+    map<int, int> mpp;
 
-    for(int i =0; i<n;i++){
+    for(int i =0; i<n; i++){
         mpp[arr[i]]++;
     }
 
@@ -23,12 +26,11 @@ int main(){
     cin >> q;
 
     while(q--){
-     int number;
+        int number;
+        cin >> number;
 
-     cin >> number;
-
-     cout << mpp[number]<< endl;
+        cout << mpp[number] << endl;
     }
 
-    return 0;
+    return 0; 
 }
